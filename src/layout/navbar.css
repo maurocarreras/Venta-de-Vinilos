@@ -1,0 +1,14 @@
+.tipografia {
+    color: #FFFF;
+    font-size: 15px !important;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.containerCart {
+    width: 38% !important;
+    display: flex !important;
+    justify-content: flex-end !important;
+}
