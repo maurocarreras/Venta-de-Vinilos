@@ -9,7 +9,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 
 import Cartwidget from "../components/Cartwidget";
 
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { Button, ButtonGroup } from "@mui/material";
 
 const Navbar = () => {
@@ -27,7 +27,7 @@ const Navbar = () => {
             <MenuIcon />
           </IconButton>
           <ButtonGroup variant="outlined" aria-label="outlined button group">
-            <Link to={"/"} className="link">
+            <NavLink to={"/"} className="link">
               <Button>
                 <Typography
                   className="tipografia"
@@ -35,11 +35,11 @@ const Navbar = () => {
                   component="div"
                   sx={{ flexGrow: 1 }}
                 >
-                  Ventas
+                  Venta de vinilos
                 </Typography>
               </Button>
-            </Link>
-            <Link to={"/nacionales"} className="link">
+            </NavLink>
+            <NavLink to={"/category/nacionales"} className="link">
               <Button>
                 <Typography
                   className="tipografia"
@@ -50,8 +50,8 @@ const Navbar = () => {
                   Nacionales
                 </Typography>
               </Button>
-            </Link>
-            <Link to={"/internacionales"} className="link">
+            </NavLink>
+            <NavLink to={"/category/internacionales"} className="link">
               <Button>
                 <Typography
                   className="tipografia"
@@ -62,8 +62,8 @@ const Navbar = () => {
                   Internacionales
                 </Typography>
               </Button>
-            </Link>
-            <Link to={"/destacados"} className="link">
+            </NavLink>
+            <NavLink to={"/category/destacados"} className="link">
               <Button>
                 <Typography
                   className="tipografia"
@@ -74,7 +74,7 @@ const Navbar = () => {
                   Destacados
                 </Typography>
               </Button>
-            </Link>
+            </NavLink>
           </ButtonGroup>
           <div className="containerCart">
             <Cartwidget />
