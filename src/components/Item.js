@@ -10,11 +10,12 @@ import { NavLink } from "react-router-dom";
 const Item = ({ item }) => {
 
   return (
-    <Card sx={{ maxWidth: 250 }}>
+    <div className="cards">
+    <Card sx={{ maxWidth: 250 }} >
       <CardMedia
         component="img"
         alt="tapa de disco"
-        height="140"
+        height="190"
         image={item.img}
       />
       <CardContent>
@@ -32,6 +33,7 @@ const Item = ({ item }) => {
         </NavLink>
       </CardActions>
     </Card>
+    </div>
   );
 };
 

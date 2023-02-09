@@ -35,7 +35,7 @@ const Navbar = () => {
                   component="div"
                   sx={{ flexGrow: 1 }}
                 >
-                  Venta de vinilos
+                   Vinilos
                 </Typography>
               </Button>
             </NavLink>
@@ -76,9 +76,11 @@ const Navbar = () => {
               </Button>
             </NavLink>
           </ButtonGroup>
-          <div className="containerCart">
-            <Cartwidget />
-          </div>
+          <NavLink to={"/cart"} className="link">
+            <div className="containerCart">
+              <Cartwidget />
+            </div>
+          </NavLink>
         </Toolbar>
       </AppBar>
     </Box>
